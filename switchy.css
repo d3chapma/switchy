@@ -1,0 +1,39 @@
+.switchy {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  background-color: $brand-primary;
+  position: relative;
+  color: white;
+  height: 25px;
+  margin: 2px;
+}
+
+.switchy-on .switchy-option:last-child:before {
+  right: 0;
+  display: block;
+}
+
+.switchy-off .switchy-option:first-child:before {
+  left: 0;
+  display: block;
+}
+
+.switchy-option:before {
+  content: ' ';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255,255,255,0.6);
+  top: 0;
+  display: none;
+}
+
+.switchy-option {
+  float: left;
+  padding: 2px 3px;
+  height: 100%;
+  min-width: 26px;
+  text-align: center;
+  position: relative;
+}
